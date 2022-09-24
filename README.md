@@ -1,2 +1,2 @@
 # Projects
-A Collection of my Personal Programming Projects.
+A Collection of my Personal Programming Projects
