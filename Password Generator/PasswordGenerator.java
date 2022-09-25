@@ -28,10 +28,10 @@ public static void main(String[] args){
 
 
         //Ensure The User Entered A Character Length Between 8 and 128
-        while (charactersInPassword <= 8 && charactersInPassword >= 128){
+        while (charactersInPassword < 8 || charactersInPassword > 128 ){
                 System.out.println();
                 System.out.println("Please Enter A Character Length Between 8-128: ");
-                int newcharactersInPassword = scan.nextInt();
+                charactersInPassword = scan.nextInt();
                 }
             
 
@@ -108,7 +108,7 @@ public static void main(String[] args){
                 System.out.println();
                 System.out.println("Thank you. Goodbye!");
                 System.out.println();
-            }
+                }
             }
         
     }
