@@ -91,7 +91,8 @@ class PasswordGenerator {
             // Ask the User if they would like to Reuse the Password Generator
             System.out.println("\nWould you like to Reuse the Password Generator? (Yes or No)\n");
             answer = scan.next();
-        } while (answer.equalsIgnoreCase("Yes"));{
+        } while (answer.equalsIgnoreCase("Yes"));
+        {
             if (answer.equalsIgnoreCase("No")) {
                 System.out.println("\n Thank you. Goodbye!\n");
 
