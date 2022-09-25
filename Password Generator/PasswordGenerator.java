@@ -16,6 +16,7 @@ public static void main(String[] args){
 
     do {
         //Text
+        System.out.println();
         System.out.println("Please Enter the number of Passwords you would like to Generate: ");
         int numberOfPasswords = scan.nextInt();
 
@@ -102,7 +103,13 @@ public static void main(String[] args){
         System.out.println("Would you like to Reuse the Password Generator? (Yes or No)");
         System.out.println();
         answer = scan.next();
-        }while (answer.equalsIgnoreCase("Yes"));
+        }while (answer.equalsIgnoreCase("Yes")); {
+            if (answer.equalsIgnoreCase("No")){
+                System.out.println();
+                System.out.println("Thank you. Goodbye!");
+                System.out.println();
+            }
+            }
         
     }
 }
