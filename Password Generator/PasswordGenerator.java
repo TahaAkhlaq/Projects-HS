@@ -22,11 +22,8 @@ class PasswordGenerator {
 
                 System.out.println();
                 System.out.println("Please Enter the Number of Characters you would like in your Password(s): ");
-                System.out.println(
-                        "\033[3m   NOTE: It is Recommended that Passwords be at a Minimum of 16 Characters in Length.\033[0m");
-                System.out
-                        .println(
-                                "\033[3m   NOTE: Supported Character Length by the Password Generator is 8-128. \033[0m");
+                System.out.println("\033[3m   NOTE: It is Recommended that Passwords be at a Minimum of 16 Characters in Length.\033[0m");
+                System.out.println("\033[3m   NOTE: Supported Character Length by the Password Generator is 8-128. \033[0m");
                 int charactersInPassword = scan.nextInt();
 
                 // Ensure The User Entered A Character Length Between 8 and 128
