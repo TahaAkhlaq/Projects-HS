@@ -16,22 +16,25 @@ public static void main(String[] args){
     System.out.println("Please enter the number of passwords you would like to generate: ");
     int numberOfPasswords = scan.nextInt();
 
-    System.out.println("NOTE: It is Recommended that Passwords be at a Minimum of 16 Characters in Length.");
-    System.out.println("Supported Character Length by the Password Generator is 8-128. ");
+    System.out.println();
     System.out.println("Please Enter the Number of Characters you would like in your Password(s): ");
+    System.out.println("\033[3m   NOTE: It is Recommended that Passwords be at a Minimum of 16 Characters in Length.\033[0m");
+    System.out.println("\033[3m   NOTE: Supported Character Length by the Password Generator is 8-128. \033[0m");
     int charactersInPassword = scan.nextInt();
 
     if (charactersInPassword < 8){
-        System.out.println("Please Enter A Higher Character Length. ");
+        System.out.println();
+        System.out.println("Please Enter A Higher Character Length: ");
         }
     
     if (charactersInPassword > 128){
-        System.out.println("Please Enter A Lower Character Length. ");
+        System.out.println("Please Enter A Lower Character Length: ");
         }
 
     //Print Multiple Passwords and Correct Character Length
-        for (int i = 0; i < numberOfPasswords; i++) {
-        password ="";
+    System.out.println();
+    for (int i = 0; i < numberOfPasswords; i++) {
+         password ="";
 
     
             for (int j = 0; j < charactersInPassword; j++) {
@@ -60,24 +63,32 @@ public static void main(String[] args){
                 }
             
             }
+            System.out.println();
             System.out.println(password);
+            
         }
+    System.out.println();
+    System.out.println();
 
     //Password Strength
     if (charactersInPassword <= 7){
         System.out.println("Password Strength: WEAK");
+        System.out.println();
         }
 
     if (charactersInPassword >= 8 && charactersInPassword <= 11 ){
         System.out.println("Password Strength: STRONG");
+        System.out.println();
         }
 
     if (charactersInPassword >= 12 && charactersInPassword <= 15){
          System.out.println("Password Strength: VERY STRONG");
+         System.out.println();
         }
 
     if (charactersInPassword >= 16){
         System.out.println("Password Strength: EXTREMELY STRONG");
+        System.out.println();
         } 
     
     }
