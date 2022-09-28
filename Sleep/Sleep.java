@@ -37,14 +37,19 @@ public class Sleep {
             if (days >= 1000 && (days % 1000) < 100) {
                 int d = 0;
                 System.out.println("You have been alive for " + days / 1000 + "," + d + days % 1000 + " days.");
-            }
 
+            }
                 else if (days >= 1000)
                     System.out.println("You have been alive for " + days / 1000 + "," + +days % 1000 + " days.");
+                
+                else if (days <1)
+                    System.out.println("You have been alive for 0 days.");
 
                 else
                     System.out.println("You have been alive for " + days + " days.");
 
+           
+        
 
             if (hours >= 1000 && (hours % 1000) < 100) {
                 int h = 0;
@@ -53,9 +58,15 @@ public class Sleep {
 
                 else if (hours >= 1000)
                     System.out.println("You have slept for " + hours / 1000 + "," + hours % 1000 + " hours.");
+                
+                else if (hours <1) 
+                        System.out.println("You have slept for 0 hours.");
+                    
 
                 else
                     System.out.println("You have slept for " + hours + " hours.");
+            
+            
 
         }
 
