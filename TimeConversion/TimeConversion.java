@@ -12,8 +12,10 @@ public class TimeConversion {
 
             if (m < 10)
                 System.out.println("The time is " + hours + ":0" + m);
+
             else
                 System.out.println("The time is " + hours + ":" + m);
+
         }
 
     }
