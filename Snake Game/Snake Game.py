@@ -52,7 +52,7 @@ class SNAKE:  # Snake class
         self.game_over_sound = pygame.mixer.Sound(
             'Snake Game/Sounds/Game Over.wav')
         self.background_sound = pygame.mixer.Sound(
-            'Snake Game/Sounds/Background Music.wav')
+            'Snake Game/Sounds/Background Music1.wav')  # Can use "Background Music1.wav" or "Background Music2.wav"
 
     def draw_snake(self):  # Draw the snake
         self.update_head_graphics()  # Uses the appropriate graphics for the snake head
@@ -163,7 +163,7 @@ class SNAKE:  # Snake class
         self.game_over_sound.play()
 
     def play_background_music(self):  # Play the background music
-        self.background_sound.set_volume(0.15)
+        self.background_sound.set_volume(0.1)
         self.background_sound.play(-1)
 
     def reset(self):
