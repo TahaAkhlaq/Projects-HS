@@ -16,43 +16,43 @@ class SNAKE:  # Snake class
 
         # Graphics for the snake (can be found in the Graphics folder)
         self.head_up = pygame.image.load(
-            'Snake Game/Graphics/head_up.png').convert_alpha()
+            '../Snake Game/Graphics/head_up.png').convert_alpha()
         self.head_down = pygame.image.load(
-            'Snake Game/Graphics/head_down.png').convert_alpha()
+            '../Snake Game/Graphics/head_down.png').convert_alpha()
         self.head_right = pygame.image.load(
-            'Snake Game/Graphics/head_right.png').convert_alpha()
+            '../Snake Game/Graphics/head_right.png').convert_alpha()
         self.head_left = pygame.image.load(
-            'Snake Game/Graphics/head_left.png').convert_alpha()
+            '../Snake Game/Graphics/head_left.png').convert_alpha()
 
         self.tail_up = pygame.image.load(
-            'Snake Game/Graphics/tail_up.png').convert_alpha()
+            '../Snake Game/Graphics/tail_up.png').convert_alpha()
         self.tail_down = pygame.image.load(
-            'Snake Game/Graphics/tail_down.png').convert_alpha()
+            '../Snake Game/Graphics/tail_down.png').convert_alpha()
         self.tail_right = pygame.image.load(
-            'Snake Game/Graphics/tail_right.png').convert_alpha()
+            '../Snake Game/Graphics/tail_right.png').convert_alpha()
         self.tail_left = pygame.image.load(
-            'Snake Game/Graphics/tail_left.png').convert_alpha()
+            '../Snake Game/Graphics/tail_left.png').convert_alpha()
 
         self.body_vertical = pygame.image.load(
-            'Snake Game/Graphics/body_vertical.png').convert_alpha()
+            '../Snake Game/Graphics/body_vertical.png').convert_alpha()
         self.body_horizontal = pygame.image.load(
-            'Snake Game/Graphics/body_horizontal.png').convert_alpha()
+            '../Snake Game/Graphics/body_horizontal.png').convert_alpha()
 
         self.body_tr = pygame.image.load(
-            'Snake Game/Graphics/body_tr.png').convert_alpha()
+            '../Snake Game/Graphics/body_tr.png').convert_alpha()
         self.body_tl = pygame.image.load(
-            'Snake Game/Graphics/body_tl.png').convert_alpha()
+            '../Snake Game/Graphics/body_tl.png').convert_alpha()
         self.body_br = pygame.image.load(
-            'Snake Game/Graphics/body_br.png').convert_alpha()
+            '../Snake Game/Graphics/body_br.png').convert_alpha()
         self.body_bl = pygame.image.load(
-            'Snake Game/Graphics/body_bl.png').convert_alpha()
+            '../Snake Game/Graphics/body_bl.png').convert_alpha()
 
         # Sound for the snake (can be found in the Sound folder)
-        self.crunch_sound = pygame.mixer.Sound('Snake Game/Sounds/Eat.wav')
+        self.crunch_sound = pygame.mixer.Sound('../Snake Game/Sounds/Eat.wav')
         self.game_over_sound = pygame.mixer.Sound(
-            'Snake Game/Sounds/Game Over.wav')
+            '../Snake Game/Sounds/Game Over.wav')
         self.background_sound = pygame.mixer.Sound(
-            'Snake Game/Sounds/Background Music1.wav')  # Can use "Background Music1.wav" or "Background Music2.wav"
+            '../Snake Game/Sounds/Background Music1.wav')  # Can use "Background Music1.wav" or "Background Music2.wav"
 
     def draw_snake(self):  # Draw the snake
         self.update_head_graphics()  # Uses the appropriate graphics for the snake head
@@ -288,12 +288,12 @@ clock = pygame.time.Clock()  # Create clock to control the framerate
 
 # Graphics (can be found in the graphics folder in the repository)
 banana = pygame.image.load(
-    'Snake Game/Graphics/banana.png').convert_alpha()  # banana image
+    '../Snake Game/Graphics/banana.png').convert_alpha()  # banana image
 banana = pygame.transform.scale(banana, (40, 40))  # Scale the banana image
 
 # Font
 # Set the font and the font size
-game_font = pygame.font.Font('Snake Game/Font/retro.ttf', 40)
+game_font = pygame.font.Font('../Snake Game/Font/retro.ttf', 40)
 
 
 SCREEN_UPDATE = pygame.USEREVENT  # Create a user event for the screen update
