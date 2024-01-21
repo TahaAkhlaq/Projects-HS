@@ -3,6 +3,7 @@ import sys  # Import sys to exit the game
 import random  # Import random to generate random numbers
 # Import Vector2 from pygame.math to use vectors for the snake and food position
 from pygame.math import Vector2
+#test
 
 
 class SNAKE:  # Snake class
@@ -52,7 +53,7 @@ class SNAKE:  # Snake class
         self.game_over_sound = pygame.mixer.Sound(
             '../Snake Game/Sounds/Game Over.wav')
         self.background_sound = pygame.mixer.Sound(
-            '../Snake Game/Sounds/Background Music1.wav')  # Can use "Background Music1.wav" or "Background Music2.wav"
+            '../Snake Game/Sounds/Background Music2.wav')  # Can use "Background Music1.wav" or "Background Music2.wav"
 
     def draw_snake(self):  # Draw the snake
         self.update_head_graphics()  # Uses the appropriate graphics for the snake head
